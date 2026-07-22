@@ -1,0 +1,29 @@
+{
+  "existing": {
+    "get_data_browser": {
+      "GET_DATA_BROWSER00": {
+        "attribute": {},
+        "id": "GET_DATA_BROWSER00",
+        "type": "s20"
+      },
+      "GET_DATA_BROWSER01": {
+        "attribute": {},
+        "id": "GET_DATA_BROWSER01",
+        "type": "s3e"
+      },
+      "GET_DATA_BROWSER02": {
+        "attribute": {},
+        "id": "GET_DATA_BROWSER02",
+        "type": "s5c"
+      }
+    }
+  },
+  "new": {
+    "get_data_browser": {
+      "get_data_browser_ref01": {
+        "attribute": {},
+        "type": "s7a"
+      }
+    }
+  }
+}

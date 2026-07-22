@@ -1,0 +1,22 @@
+# BasicGetDataBrowserFlow
+
+main: kit: flow: BasicGetDataBrowserFlow:
+{
+  entity: "get_data_browser",
+  kind: "basic",
+  name: "BasicGetDataBrowserFlow",
+  step: [
+    {
+      op: "list",
+      valid: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "get_data_browser_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicGetDataBrowserFlow"
+}

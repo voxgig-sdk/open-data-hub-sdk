@@ -1,0 +1,173 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Open Data Hub API",
+    "description": "The Open Data Hub API provides programmatic access to various datasets and resources. It allows users to retrieve, submit, and manage data related to domains such as mobility and tourism efficiently.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Open Data Hub Documentation",
+      "url": "https://opendatahub.readthedocs.io/en/latest/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://databrowser.opendatahub.com",
+      "description": "Open Data Hub Production Server"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Get Data Browser",
+        "description": "Access the Open Data Hub data browser interface to retrieve datasets and resources related to mobility and tourism.",
+        "operationId": "getDataBrowser",
+        "tags": [
+          "Data Browser"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with data browser content",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string",
+                  "description": "HTML content of the data browser interface"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "description": "Array of data resources",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "Unique identifier for the resource"
+                          },
+                          "type": {
+                            "type": "string",
+                            "description": "Type of resource (e.g., mobility, tourism)"
+                          },
+                          "attributes": {
+                            "type": "object",
+                            "description": "Resource attributes and metadata"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request - Invalid parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message"
+                    },
+                    "code": {
+                      "type": "integer",
+                      "description": "Error code"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message"
+                    },
+                    "code": {
+                      "type": "integer",
+                      "description": "Error code"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DataResource": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the resource"
+          },
+          "type": {
+            "type": "string",
+            "description": "Type of resource",
+            "enum": [
+              "mobility",
+              "tourism",
+              "general"
+            ]
+          },
+          "attributes": {
+            "type": "object",
+            "description": "Resource attributes and metadata"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of resource creation or update"
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error message"
+          },
+          "code": {
+            "type": "integer",
+            "description": "Error code"
+          },
+          "details": {
+            "type": "string",
+            "description": "Additional error details"
+          }
+        },
+        "required": [
+          "error",
+          "code"
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Data Browser",
+      "description": "Access and browse Open Data Hub datasets"
+    }
+  ],
+  "externalDocs": {
+    "description": "Open Data Hub API Documentation",
+    "url": "https://opendatahub.readthedocs.io/en/latest/"
+  }
+}

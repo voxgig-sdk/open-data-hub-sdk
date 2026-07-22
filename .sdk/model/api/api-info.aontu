@@ -1,0 +1,26 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        name: "Open Data Hub Documentation"
+        url: "https://opendatahub.readthedocs.io/en/latest/"
+      }
+      description: "The Open Data Hub API provides programmatic access to various datasets and resources. It allows users to retrieve, submit, and manage data related to domains such as mobility and tourism efficiently."
+      servers: [
+        {
+          description: "Open Data Hub Production Server"
+          url: "https://databrowser.opendatahub.com"
+        }
+      ]
+      summary: "The Open Data Hub API provides programmatic access to various datasets and resources."
+      title: "Open Data Hub API"
+      version: "1.0.0"
+      website: "https://opendatahub.readthedocs.io/en/latest/"
+    }
+  }
+}
+
