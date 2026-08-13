@@ -38,9 +38,18 @@ network, and no credentials:
 ### TypeScript
 
 ```ts
-const client = OpenDataHubSDK.test()
+// The offline mock starts EMPTY — seed it with the records the test needs.
+// Shape: { entity: { <entity-name>: { <id>: <record> } } }
+const client = OpenDataHubSDK.test({
+  entity: {
+    get_data_browser: {
+      test01: { id: 'test01' },
+    },
+  },
+})
 const getdatabrowsers = await client.GetDataBrowser().list()
-// getdatabrowsers is an array of bare GetDataBrowser records populated with mock data
+// getdatabrowsers is an array of GetDataBrowser entities, populated with mock data
+// — call getdatabrowsers[0].data() for the record itself
 console.log(getdatabrowsers)
 ```
 
@@ -110,7 +119,7 @@ import { OpenDataHubSDK } from '@voxgig-sdk/open-data-hub'
 
 const client = new OpenDataHubSDK()
 
-// List all getdatabrowsers (returns GetDataBrowser[])
+// List all getdatabrowsers (returns GetDataBrowserEntity[] — .data() for the record)
 const getdatabrowsers = await client.GetDataBrowser().list()
 for (const getdatabrowser of getdatabrowsers) {
   console.log(getdatabrowser)
@@ -343,6 +352,9 @@ Pass custom features via the `extend` option at construction time.
 
 This SDK is generated from the upstream OpenAPI specification. It is an
 unofficial client and is not affiliated with the API provider.
+
+The OpenAPI spec(s) this SDK was generated from are kept in the
+[`.sdk/def/`](.sdk/def/) folder.
 
 - Upstream API: [https://opendatahub.readthedocs.io/en/latest/](https://opendatahub.readthedocs.io/en/latest/)
 

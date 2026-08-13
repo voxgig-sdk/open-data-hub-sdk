@@ -10,7 +10,7 @@
 
 # GetDataBrowser entity data model.
 #
-# @!attribute [rw] attribute
+# @!attribute [rw] attributes
 #   @return [Hash, nil]
 #
 # @!attribute [rw] id
@@ -19,7 +19,7 @@
 # @!attribute [rw] type
 #   @return [String, nil]
 GetDataBrowser = Struct.new(
-  :attribute,
+  :attributes,
   :id,
   :type,
   keyword_init: true
@@ -27,7 +27,7 @@ GetDataBrowser = Struct.new(
 
 # Request payload for GetDataBrowser#list.
 #
-# @!attribute [rw] attribute
+# @!attribute [rw] attributes
 #   @return [Hash, nil]
 #
 # @!attribute [rw] id
@@ -36,7 +36,7 @@ GetDataBrowser = Struct.new(
 # @!attribute [rw] type
 #   @return [String, nil]
 GetDataBrowserListMatch = Struct.new(
-  :attribute,
+  :attributes,
   :id,
   :type,
   keyword_init: true

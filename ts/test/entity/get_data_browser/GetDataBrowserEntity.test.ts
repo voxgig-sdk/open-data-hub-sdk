@@ -26,8 +26,8 @@ import {
 describe('GetDataBrowserEntity', async () => {
 
   // Per-test live pacing. Delay is read from sdk-test-control.json's
-  // `test.live.delayMs`; only sleeps when OPENDATAHUB_TEST_LIVE=TRUE.
-  afterEach(liveDelay('OPENDATAHUB_TEST_LIVE'))
+  // `test.live.delayMs`; only sleeps when OPEN_DATA_HUB_TEST_LIVE=TRUE.
+  afterEach(liveDelay('OPEN_DATA_HUB_TEST_LIVE'))
 
   test('instance', async () => {
     const testsdk = OpenDataHubSDK.test()
@@ -63,7 +63,7 @@ describe('GetDataBrowserEntity', async () => {
     const get_data_browser_ref01_ent = client.GetDataBrowser()
     const get_data_browser_ref01_match: any = {}
 
-    const get_data_browser_ref01_list = await get_data_browser_ref01_ent.list(get_data_browser_ref01_match)
+    const get_data_browser_ref01_list = (await get_data_browser_ref01_ent.list(get_data_browser_ref01_match)).map((e: any) => e.data())
 
 
   })

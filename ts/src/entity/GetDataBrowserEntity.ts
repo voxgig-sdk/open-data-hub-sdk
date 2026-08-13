@@ -37,7 +37,7 @@ class GetDataBrowserEntity extends OpenDataHubEntityBase<GetDataBrowser> {
 
 
 
-  async list(this: any, reqmatch?: GetDataBrowserListMatch, ctrl?: Control): Promise<GetDataBrowser[]> {
+  async list(this: any, reqmatch?: GetDataBrowserListMatch, ctrl?: Control): Promise<GetDataBrowserEntity[]> {
 
     const utility = this._utility
 

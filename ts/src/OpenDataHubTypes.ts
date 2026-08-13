@@ -6,13 +6,13 @@
 // @voxgig/apidef VALID_CANON). Do not edit by hand.
 
 export interface GetDataBrowser {
-  attribute?: Record<string, any>
+  attributes?: Record<string, any>
   id?: string
   type?: string
 }
 
 export interface GetDataBrowserListMatch {
-  attribute?: Record<string, any>
+  attributes?: Record<string, any>
   id?: string
   type?: string
 }

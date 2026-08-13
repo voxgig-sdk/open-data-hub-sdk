@@ -92,7 +92,7 @@ $get_data_browser = $client->GetDataBrowser();
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attribute` | `array` | No |  |
+| `attributes` | `array` | No |  |
 | `id` | `string` | No |  |
 | `type` | `string` | No |  |
 

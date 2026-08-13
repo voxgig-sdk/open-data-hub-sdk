@@ -2,17 +2,17 @@
   "existing": {
     "get_data_browser": {
       "GET_DATA_BROWSER00": {
-        "attribute": {},
+        "attributes": {},
         "id": "GET_DATA_BROWSER00",
         "type": "s20"
       },
       "GET_DATA_BROWSER01": {
-        "attribute": {},
+        "attributes": {},
         "id": "GET_DATA_BROWSER01",
         "type": "s3e"
       },
       "GET_DATA_BROWSER02": {
-        "attribute": {},
+        "attributes": {},
         "id": "GET_DATA_BROWSER02",
         "type": "s5c"
       }
@@ -21,7 +21,7 @@
   "new": {
     "get_data_browser": {
       "get_data_browser_ref01": {
-        "attribute": {},
+        "attributes": {},
         "type": "s7a"
       }
     }

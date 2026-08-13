@@ -16,11 +16,11 @@
 import pytest
 
 from projectname_sdk import OpenDataHubSDK
-from core.error import OpenDataHubError
-from core.result import OpenDataHubResult
-from core.response import OpenDataHubResponse
-from core.spec import OpenDataHubSpec
-from feature.base_feature import OpenDataHubBaseFeature
+from projectname_sdk.core.error import OpenDataHubError
+from projectname_sdk.core.result import OpenDataHubResult
+from projectname_sdk.core.response import OpenDataHubResponse
+from projectname_sdk.core.spec import OpenDataHubSpec
+from projectname_sdk.feature.base_feature import OpenDataHubBaseFeature
 
 
 def _client():

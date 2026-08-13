@@ -218,9 +218,9 @@ data **directly** — there is no wrapper:
 
 Check `err` first (it is non-`nil` on failure), then use `value`:
 
-    local get_data_browser, err = client:GetDataBrowser():load()
+    local get_data_browser, err = client:GetDataBrowser():list()
     if err then error(err) end
-    -- get_data_browser is the loaded record
+    -- get_data_browser is the record list
 
 Only `direct()` returns a response envelope — a `table` with `ok`,
 `status`, `headers`, and `data` keys.
@@ -231,7 +231,7 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `attribute` |  |
+| `attributes` |  |
 | `id` |  |
 | `type` |  |
 
@@ -258,7 +258,7 @@ Create an instance: `local get_data_browser = client:GetDataBrowser(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attribute` | `table` |  |
+| `attributes` | `table` |  |
 | `id` | `string` |  |
 | `type` | `string` |  |
 

@@ -98,7 +98,7 @@ fmt.Println(getDataBrowser.GetName()) // "get_data_browser"
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attribute` | `map[string]any` | No |  |
+| `attributes` | `map[string]any` | No |  |
 | `id` | `string` | No |  |
 | `type` | `string` | No |  |
 

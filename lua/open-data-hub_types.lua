@@ -7,12 +7,12 @@
 -- edit by hand.
 
 ---@class GetDataBrowser
----@field attribute? table
+---@field attributes? table
 ---@field id? string
 ---@field type? string
 
 ---@class GetDataBrowserListMatch
----@field attribute? table
+---@field attributes? table
 ---@field id? string
 ---@field type? string
 

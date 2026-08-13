@@ -27,7 +27,7 @@ module OpenDataHubConfig
           "fields" => [
             {
               "active" => true,
-              "name" => "attribute",
+              "name" => "attributes",
               "req" => false,
               "type" => "`$OBJECT`",
               "index$" => 0,
@@ -56,13 +56,14 @@ module OpenDataHubConfig
                 {
                   "active" => true,
                   "args" => {},
+                  "kind" => "http",
                   "method" => "GET",
                   "orig" => "/",
                   "parts" => [],
                   "select" => {},
                   "transform" => {
                     "req" => "`reqdata`",
-                    "res" => "`body`",
+                    "res" => "`body.data`",
                   },
                   "index$" => 0,
                 },

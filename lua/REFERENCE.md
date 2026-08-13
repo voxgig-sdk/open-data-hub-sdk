@@ -90,7 +90,7 @@ local get_data_browser = client:GetDataBrowser(nil)
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attribute` | `table` | No |  |
+| `attributes` | `table` | No |  |
 | `id` | `string` | No |  |
 | `type` | `string` | No |  |
 

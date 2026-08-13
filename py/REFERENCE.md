@@ -87,7 +87,7 @@ get_data_browser = client.GetDataBrowser()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attribute` | `dict` | No |  |
+| `attributes` | `dict` | No |  |
 | `id` | `str` | No |  |
 | `type` | `str` | No |  |
 

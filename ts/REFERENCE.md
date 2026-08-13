@@ -116,7 +116,7 @@ const get_data_browser = client.GetDataBrowser()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attribute` | `Record<string, any>` | No |  |
+| `attributes` | `Record<string, any>` | No |  |
 | `id` | `string` | No |  |
 | `type` | `string` | No |  |
 

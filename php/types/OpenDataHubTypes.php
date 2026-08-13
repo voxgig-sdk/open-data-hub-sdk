@@ -15,7 +15,7 @@ declare(strict_types=1);
 /** GetDataBrowser entity data model. */
 class GetDataBrowser
 {
-    public ?array $attribute = null;
+    public ?array $attributes = null;
     public ?string $id = null;
     public ?string $type = null;
 }
@@ -23,7 +23,7 @@ class GetDataBrowser
 /** Request payload for GetDataBrowser#list. */
 class GetDataBrowserListMatch
 {
-    public ?array $attribute = null;
+    public ?array $attributes = null;
     public ?string $id = null;
     public ?string $type = null;
 }

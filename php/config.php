@@ -32,7 +32,7 @@ class OpenDataHubConfig
           'fields' => [
             [
               'active' => true,
-              'name' => 'attribute',
+              'name' => 'attributes',
               'req' => false,
               'type' => '`$OBJECT`',
               'index$' => 0,
@@ -61,13 +61,14 @@ class OpenDataHubConfig
                 [
                   'active' => true,
                   'args' => [],
+                  'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/',
                   'parts' => [],
                   'select' => [],
                   'transform' => [
                     'req' => '`reqdata`',
-                    'res' => '`body`',
+                    'res' => '`body.data`',
                   ],
                   'index$' => 0,
                 ],

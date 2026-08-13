@@ -35,7 +35,9 @@ const client = new OpenDataHubSDK()
 
 ### 2. List getdatabrowser records
 
-`list()` resolves to an array of GetDataBrowser objects — iterate it directly:
+`list()` resolves to an array of GetDataBrowser ENTITIES — every operation
+resolves to entities, not raw records. Iterate them directly, and call
+`.data()` on one for the record it holds:
 
 ```ts
 const getdatabrowsers = await client.GetDataBrowser().list()
@@ -120,7 +122,8 @@ Create a mock client for unit testing — no server required:
 const client = OpenDataHubSDK.test()
 
 const getdatabrowser = await client.GetDataBrowser().list()
-// getdatabrowser is a bare entity populated with mock response data
+// getdatabrowser is the entity, populated with mock response data
+// — call getdatabrowser.data() for the record itself
 console.log(getdatabrowser)
 ```
 
@@ -284,7 +287,7 @@ The `prepare()` method returns:
 
 | Field | Description |
 | --- | --- |
-| `attribute` |  |
+| `attributes` |  |
 | `id` |  |
 | `type` |  |
 
@@ -311,7 +314,7 @@ Create an instance: `const get_data_browser = client.GetDataBrowser()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attribute` | `Record<string, any>` |  |
+| `attributes` | `Record<string, any>` |  |
 | `id` | `string` |  |
 | `type` | `string` |  |
 

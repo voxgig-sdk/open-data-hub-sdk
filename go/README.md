@@ -260,7 +260,7 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"attribute"` |  |
+| `"attributes"` |  |
 | `"id"` |  |
 | `"type"` |  |
 
@@ -287,7 +287,7 @@ Create an instance: `getDataBrowser := client.GetDataBrowser(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attribute` | `map[string]any` |  |
+| `attributes` | `map[string]any` |  |
 | `id` | `string` |  |
 | `type` | `string` |  |
 

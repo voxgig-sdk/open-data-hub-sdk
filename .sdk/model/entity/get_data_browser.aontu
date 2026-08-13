@@ -6,7 +6,7 @@ main: kit: entity: get_data_browser: {
 
   fields: [
     {
-      name: "attribute"
+      name: "attributes"
       req: false
       type: "`$OBJECT`"
     }
@@ -37,7 +37,7 @@ main: kit: entity: get_data_browser: {
           orig: "/"
           transform: {
             req: "`reqdata`"
-            res: "`body`"
+            res: "`body.data`"
           }
         }
       ]

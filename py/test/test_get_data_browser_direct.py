@@ -3,9 +3,9 @@
 import json
 import pytest
 
-from utility.voxgig_struct import voxgig_struct as vs
+from opendatahub_sdk.utility.voxgig_struct import voxgig_struct as vs
 from opendatahub_sdk import OpenDataHubSDK
-from core import helpers
+from opendatahub_sdk.core import helpers
 from test import runner
 
 
@@ -58,11 +58,11 @@ def _get_data_browser_direct_setup(mockres):
     calls = []
 
     env = runner.env_override({
-        "OPENDATAHUB_TEST_GET_DATA_BROWSER_ENTID": {},
-        "OPENDATAHUB_TEST_LIVE": "FALSE",
+        "OPEN_DATA_HUB_TEST_GET_DATA_BROWSER_ENTID": {},
+        "OPEN_DATA_HUB_TEST_LIVE": "FALSE",
     })
 
-    live = env.get("OPENDATAHUB_TEST_LIVE") == "TRUE"
+    live = env.get("OPEN_DATA_HUB_TEST_LIVE") == "TRUE"
 
     if live:
         merged_opts = {

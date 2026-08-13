@@ -14,12 +14,12 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from config import make_config
-from features import _make_feature
-from core.control import OpenDataHubControl
-from core.error import OpenDataHubError
-from core.result import OpenDataHubResult
-from core.spec import OpenDataHubSpec
+from opendatahub_sdk.config import make_config
+from opendatahub_sdk.features import _make_feature
+from opendatahub_sdk.core.control import OpenDataHubControl
+from opendatahub_sdk.core.error import OpenDataHubError
+from opendatahub_sdk.core.result import OpenDataHubResult
+from opendatahub_sdk.core.spec import OpenDataHubSpec
 
 
 # True when this SDK was generated with the named feature.

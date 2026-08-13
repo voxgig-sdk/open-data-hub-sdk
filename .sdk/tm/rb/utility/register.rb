@@ -24,6 +24,7 @@ require_relative 'prepare_method'
 require_relative 'prepare_params'
 require_relative 'prepare_path'
 require_relative 'prepare_query'
+require_relative 'graphql'
 require_relative 'result_basic'
 require_relative 'result_body'
 require_relative 'result_headers'
@@ -55,6 +56,8 @@ OpenDataHubUtility.registrar = ->(u) {
   u.prepare_params = OpenDataHubUtilities::PrepareParams
   u.prepare_path = OpenDataHubUtilities::PreparePath
   u.prepare_query = OpenDataHubUtilities::PrepareQuery
+  u.graphql_body = OpenDataHubUtilities::GraphqlBody
+  u.graphql_errors = OpenDataHubUtilities::GraphqlErrors
   u.result_basic = OpenDataHubUtilities::ResultBasic
   u.result_body = OpenDataHubUtilities::ResultBody
   u.result_headers = OpenDataHubUtilities::ResultHeaders

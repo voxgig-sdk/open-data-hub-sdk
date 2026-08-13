@@ -37,7 +37,7 @@ begin
   # list returns an Array of GetDataBrowser records — iterate directly.
   getdatabrowsers = client.GetDataBrowser.list
   getdatabrowsers.each do |item|
-    puts "#{item["id"]} #{item["attribute"]}"
+    puts "#{item["id"]} #{item["attributes"]}"
   end
 rescue => err
   warn "list failed: #{err}"
@@ -119,7 +119,8 @@ Create a mock client for unit testing — no server required:
 ```ruby
 client = OpenDataHubSDK.test
 
-# Entity ops return the bare mock record (raises on error).
+# Entity ops return the ENTITY (raises on error);
+# call data_get for the mock record.
 getdatabrowser = client.GetDataBrowser.list()
 puts getdatabrowser
 ```
@@ -236,7 +237,7 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `attribute` |  |
+| `attributes` |  |
 | `id` |  |
 | `type` |  |
 
@@ -263,7 +264,7 @@ Create an instance: `get_data_browser = client.GetDataBrowser`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attribute` | `Hash` |  |
+| `attributes` | `Hash` |  |
 | `id` | `String` |  |
 | `type` | `String` |  |
 

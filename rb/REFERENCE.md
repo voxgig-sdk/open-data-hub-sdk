@@ -93,7 +93,7 @@ get_data_browser = client.GetDataBrowser
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attribute` | `Hash` | No |  |
+| `attributes` | `Hash` | No |  |
 | `id` | `String` | No |  |
 | `type` | `String` | No |  |
 

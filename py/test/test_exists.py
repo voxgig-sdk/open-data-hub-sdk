@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# OpenDataHub SDK exists test
 
 import pytest
 from opendatahub_sdk import OpenDataHubSDK

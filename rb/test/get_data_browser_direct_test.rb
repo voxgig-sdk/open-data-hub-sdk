@@ -60,11 +60,11 @@ def get_data_browser_direct_setup(mockres)
   calls = []
 
   env = Runner.env_override({
-    "OPENDATAHUB_TEST_GET_DATA_BROWSER_ENTID" => {},
-    "OPENDATAHUB_TEST_LIVE" => "FALSE",
+    "OPEN_DATA_HUB_TEST_GET_DATA_BROWSER_ENTID" => {},
+    "OPEN_DATA_HUB_TEST_LIVE" => "FALSE",
   })
 
-  live = env["OPENDATAHUB_TEST_LIVE"] == "TRUE"
+  live = env["OPEN_DATA_HUB_TEST_LIVE"] == "TRUE"
 
   if live
     merged_opts = {

@@ -43,8 +43,8 @@ class OpenDataHubTestRunner
 
     public static function env_override(array $m): array
     {
-        $live = self::getenv('OPENDATAHUB_TEST_LIVE');
-        $override = self::getenv('OPENDATAHUB_TEST_OVERRIDE');
+        $live = self::getenv('OPEN_DATA_HUB_TEST_LIVE');
+        $override = self::getenv('OPEN_DATA_HUB_TEST_OVERRIDE');
 
         if ($live === 'TRUE' || $override === 'TRUE') {
             foreach (array_keys($m) as $key) {
@@ -63,9 +63,9 @@ class OpenDataHubTestRunner
             }
         }
 
-        $explain = self::getenv('OPENDATAHUB_TEST_EXPLAIN');
+        $explain = self::getenv('OPEN_DATA_HUB_TEST_EXPLAIN');
         if ($explain !== null && $explain !== '') {
-            $m['OPENDATAHUB_TEST_EXPLAIN'] = $explain;
+            $m['OPEN_DATA_HUB_TEST_EXPLAIN'] = $explain;
         }
 
         return $m;
