@@ -28,7 +28,7 @@ class OpenDataHubSDK
     utility = OpenDataHubUtility.new
     @_utility = utility
 
-    config = OpenDataHubConfig.make_config
+    config = OpenDataHubConfig.shared_config
 
     @_rootctx = utility.make_context.call({
       "client" => self,

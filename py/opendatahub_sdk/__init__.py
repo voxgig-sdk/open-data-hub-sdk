@@ -23,8 +23,8 @@ class OpenDataHubSDK:
         utility = OpenDataHubUtility()
         self._utility = utility
 
-        from opendatahub_sdk.config import make_config
-        config = make_config()
+        from opendatahub_sdk.config import shared_config
+        config = shared_config()
 
         self._rootctx = utility.make_context({
             "client": self,

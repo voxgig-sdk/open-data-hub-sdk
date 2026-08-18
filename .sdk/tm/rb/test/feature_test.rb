@@ -15,7 +15,7 @@ require_relative "../OpenDataHub_sdk"
 module OpenDataHubFeatureHarness
   # True when this SDK was generated with the named feature.
   def self.has_feature?(name)
-    f = OpenDataHubConfig.make_config["feature"]
+    f = OpenDataHubConfig.shared_config["feature"]
     f.is_a?(Hash) && !f[name].nil?
   end
 

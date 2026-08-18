@@ -40,7 +40,7 @@ class OpenDataHubSDK
         $utility = new OpenDataHubUtility();
         $this->_utility = $utility;
 
-        $config = OpenDataHubConfig::make_config();
+        $config = OpenDataHubConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,
