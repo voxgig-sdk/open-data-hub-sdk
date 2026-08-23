@@ -98,9 +98,9 @@ fmt.Println(getDataBrowser.GetName()) // "get_data_browser"
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attributes` | `map[string]any` | No |  |
-| `id` | `string` | No |  |
-| `type` | `string` | No |  |
+| `attributes` | `map[string]any` | No | Resource attributes and metadata |
+| `id` | `string` | No | Unique identifier for the resource |
+| `type` | `string` | No | Type of resource (e.g., mobility, tourism) |
 
 ### Operations
 

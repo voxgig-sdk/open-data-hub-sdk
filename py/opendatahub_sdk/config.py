@@ -28,6 +28,9 @@ def make_config():
     return {
         "main": {
             "name": "OpenDataHub",
+            "slug": "open-data-hub",
+            "version": "0.0.1",
+            "target": "py",
         },
         "feature": {
             "test": {
@@ -50,14 +53,17 @@ def make_config():
         "fields": [
           {
             "name": "attributes",
+            "short": "Resource attributes and metadata",
             "type": "`$OBJECT`",
           },
           {
             "name": "id",
+            "short": "Unique identifier for the resource",
             "type": "`$STRING`",
           },
           {
             "name": "type",
+            "short": "Type of resource (e.g., mobility, tourism)",
             "type": "`$STRING`",
           },
         ],

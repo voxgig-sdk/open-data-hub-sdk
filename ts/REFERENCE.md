@@ -116,9 +116,9 @@ const get_data_browser = client.GetDataBrowser()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attributes` | `Record<string, any>` | No |  |
-| `id` | `string` | No |  |
-| `type` | `string` | No |  |
+| `attributes` | `Record<string, any>` | No | Resource attributes and metadata |
+| `id` | `string` | No | Unique identifier for the resource |
+| `type` | `string` | No | Type of resource (e.g., mobility, tourism) |
 
 ### Operations
 

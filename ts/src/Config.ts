@@ -19,9 +19,20 @@ class Config {
     return fi
   }
 
+  // False for a feature added at runtime via options.extend (station's
+  // adopt path) - the constructor uses this to skip makeFeature for names
+  // no generated class backs.
+  hasFeature(this: any, fn: string) {
+    return null != FEATURE_CLASS[fn]
+  }
+
 
   main = {
     name: 'OpenDataHub',
+        slug: "open-data-hub",
+    version: "0.0.1",
+    target: "ts",
+
   }
 
 
@@ -56,14 +67,17 @@ class Config {
       "fields": [
         {
           "name": "attributes",
+          "short": "Resource attributes and metadata",
           "type": "`$OBJECT`"
         },
         {
           "name": "id",
+          "short": "Unique identifier for the resource",
           "type": "`$STRING`"
         },
         {
           "name": "type",
+          "short": "Type of resource (e.g., mobility, tourism)",
           "type": "`$STRING`"
         }
       ],

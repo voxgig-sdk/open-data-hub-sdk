@@ -87,9 +87,9 @@ get_data_browser = client.GetDataBrowser()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attributes` | `dict` | No |  |
-| `id` | `str` | No |  |
-| `type` | `str` | No |  |
+| `attributes` | `dict` | No | Resource attributes and metadata |
+| `id` | `str` | No | Unique identifier for the resource |
+| `type` | `str` | No | Type of resource (e.g., mobility, tourism) |
 
 ### Operations
 

@@ -247,9 +247,9 @@ On error, `ok` is `false` and `$err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `attributes` |  |
-| `id` |  |
-| `type` |  |
+| `attributes` | Resource attributes and metadata |
+| `id` | Unique identifier for the resource |
+| `type` | Type of resource (e.g., mobility, tourism) |
 
 Operations: List.
 
@@ -274,9 +274,9 @@ Create an instance: `$get_data_browser = $client->GetDataBrowser();`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attributes` | `array` |  |
-| `id` | `string` |  |
-| `type` | `string` |  |
+| `attributes` | `array` | Resource attributes and metadata |
+| `id` | `string` | Unique identifier for the resource |
+| `type` | `string` | Type of resource (e.g., mobility, tourism) |
 
 #### Example: List
 

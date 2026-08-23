@@ -36,18 +36,21 @@
               "active": true,
               "name": "attributes",
               "req": false,
+              "short": "Resource attributes and metadata",
               "type": "`$OBJECT`"
             },
             {
               "active": true,
               "name": "id",
               "req": false,
+              "short": "Unique identifier for the resource",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "type",
               "req": false,
+              "short": "Type of resource (e.g., mobility, tourism)",
               "type": "`$STRING`"
             }
           ],

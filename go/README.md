@@ -6,7 +6,7 @@ The Golang SDK for the OpenDataHub API — an entity-oriented client using stand
 
 It exposes the API as capitalised, semantic **Entities** — e.g. `client.GetDataBrowser(nil)` — each with the same small set of operations (`List`) instead of raw URL paths and query strings. You call meaning, not endpoints, which keeps the cognitive load low.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb`, `ts` — see
 > the [top-level README](../README.md).
 
 
@@ -260,9 +260,9 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"attributes"` |  |
-| `"id"` |  |
-| `"type"` |  |
+| `"attributes"` | Resource attributes and metadata |
+| `"id"` | Unique identifier for the resource |
+| `"type"` | Type of resource (e.g., mobility, tourism) |
 
 Operations: List.
 
@@ -287,9 +287,9 @@ Create an instance: `getDataBrowser := client.GetDataBrowser(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attributes` | `map[string]any` |  |
-| `id` | `string` |  |
-| `type` | `string` |  |
+| `attributes` | `map[string]any` | Resource attributes and metadata |
+| `id` | `string` | Unique identifier for the resource |
+| `type` | `string` | Type of resource (e.g., mobility, tourism) |
 
 #### Example: List
 

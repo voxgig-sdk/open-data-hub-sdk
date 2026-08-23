@@ -237,9 +237,9 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `attributes` |  |
-| `id` |  |
-| `type` |  |
+| `attributes` | Resource attributes and metadata |
+| `id` | Unique identifier for the resource |
+| `type` | Type of resource (e.g., mobility, tourism) |
 
 Operations: List.
 
@@ -264,9 +264,9 @@ Create an instance: `get_data_browser = client.GetDataBrowser`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attributes` | `Hash` |  |
-| `id` | `String` |  |
-| `type` | `String` |  |
+| `attributes` | `Hash` | Resource attributes and metadata |
+| `id` | `String` | Unique identifier for the resource |
+| `type` | `String` | Type of resource (e.g., mobility, tourism) |
 
 #### Example: List
 

@@ -243,9 +243,9 @@ On error, `ok` is `False` and `err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `attributes` |  |
-| `id` |  |
-| `type` |  |
+| `attributes` | Resource attributes and metadata |
+| `id` | Unique identifier for the resource |
+| `type` | Type of resource (e.g., mobility, tourism) |
 
 Operations: List.
 
@@ -270,9 +270,9 @@ Create an instance: `get_data_browser = client.GetDataBrowser()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attributes` | `dict` |  |
-| `id` | `str` |  |
-| `type` | `str` |  |
+| `attributes` | `dict` | Resource attributes and metadata |
+| `id` | `str` | Unique identifier for the resource |
+| `type` | `str` | Type of resource (e.g., mobility, tourism) |
 
 #### Example: List
 

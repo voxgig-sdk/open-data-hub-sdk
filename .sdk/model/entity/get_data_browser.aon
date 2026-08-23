@@ -8,16 +8,19 @@ main: kit: entity: get_data_browser: {
     {
       name: "attributes"
       req: false
+      short: "Resource attributes and metadata"
       type: "`$OBJECT`"
     }
     {
       name: "id"
       req: false
+      short: "Unique identifier for the resource"
       type: "`$STRING`"
     }
     {
       name: "type"
       req: false
+      short: "Type of resource (e.g., mobility, tourism)"
       type: "`$STRING`"
     }
   ]

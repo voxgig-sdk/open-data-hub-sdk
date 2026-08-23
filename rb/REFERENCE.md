@@ -93,9 +93,9 @@ get_data_browser = client.GetDataBrowser
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attributes` | `Hash` | No |  |
-| `id` | `String` | No |  |
-| `type` | `String` | No |  |
+| `attributes` | `Hash` | No | Resource attributes and metadata |
+| `id` | `String` | No | Unique identifier for the resource |
+| `type` | `String` | No | Type of resource (e.g., mobility, tourism) |
 
 ### Operations
 

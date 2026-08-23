@@ -90,9 +90,9 @@ local get_data_browser = client:GetDataBrowser(nil)
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `attributes` | `table` | No |  |
-| `id` | `string` | No |  |
-| `type` | `string` | No |  |
+| `attributes` | `table` | No | Resource attributes and metadata |
+| `id` | `string` | No | Unique identifier for the resource |
+| `type` | `string` | No | Type of resource (e.g., mobility, tourism) |
 
 ### Operations
 

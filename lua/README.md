@@ -231,9 +231,9 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `attributes` |  |
-| `id` |  |
-| `type` |  |
+| `attributes` | Resource attributes and metadata |
+| `id` | Unique identifier for the resource |
+| `type` | Type of resource (e.g., mobility, tourism) |
 
 Operations: List.
 
@@ -258,9 +258,9 @@ Create an instance: `local get_data_browser = client:GetDataBrowser(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `attributes` | `table` |  |
-| `id` | `string` |  |
-| `type` | `string` |  |
+| `attributes` | `table` | Resource attributes and metadata |
+| `id` | `string` | Unique identifier for the resource |
+| `type` | `string` | Type of resource (e.g., mobility, tourism) |
 
 #### Example: List
 
