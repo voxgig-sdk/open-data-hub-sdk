@@ -73,6 +73,10 @@ class OpenDataHubConfig
               'type' => '`$STRING`',
             ],
           ],
+          'id' => [
+            'field' => 'id',
+            'name' => 'id',
+          ],
           'name' => 'get_data_browser',
           'op' => [
             'list' => [
@@ -84,12 +88,13 @@ class OpenDataHubConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/',
-                  'parts' => [],
+                  'segments' => [],
                   'select' => [],
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.data`',
                   ],
+                  'parts' => [],
                 ],
               ],
             ],

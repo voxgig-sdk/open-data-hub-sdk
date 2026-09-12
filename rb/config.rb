@@ -59,6 +59,10 @@ module OpenDataHubConfig
               "type" => "`$STRING`",
             },
           ],
+          "id" => {
+            "field" => "id",
+            "name" => "id",
+          },
           "name" => "get_data_browser",
           "op" => {
             "list" => {
@@ -70,12 +74,13 @@ module OpenDataHubConfig
                   "kind" => "http",
                   "method" => "GET",
                   "orig" => "/",
-                  "parts" => [],
+                  "segments" => [],
                   "select" => {},
                   "transform" => {
                     "req" => "`reqdata`",
                     "res" => "`body.data`",
                   },
+                  "parts" => [],
                 },
               ],
             },
