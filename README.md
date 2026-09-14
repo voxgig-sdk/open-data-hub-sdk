@@ -105,7 +105,7 @@ local results, err = client:GetDataBrowser():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
+| TypeScript | `@voxgig-sdk/open-data-hub-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
 | Python | `voxgig-sdk-open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
 | PHP | `voxgig-sdk/open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/open-data-hub-sdk/go` | `go get github.com/voxgig-sdk/open-data-hub-sdk/go@latest` |
@@ -119,7 +119,7 @@ local results, err = client:GetDataBrowser():list()
 ### TypeScript
 
 ```ts
-import { OpenDataHubSDK } from '@voxgig-sdk/open-data-hub'
+import { OpenDataHubSDK } from '@voxgig-sdk/open-data-hub-sdk'
 
 const client = new OpenDataHubSDK()
 

@@ -28,7 +28,7 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { OpenDataHubSDK } from '@voxgig-sdk/open-data-hub'
+import { OpenDataHubSDK } from '@voxgig-sdk/open-data-hub-sdk'
 
 const client = new OpenDataHubSDK()
 ```
@@ -407,7 +407,7 @@ open-data-hub/
 Import the SDK from the package root:
 
 ```ts
-import { OpenDataHubSDK } from '@voxgig-sdk/open-data-hub'
+import { OpenDataHubSDK } from '@voxgig-sdk/open-data-hub-sdk'
 ```
 
 ### Entity state
