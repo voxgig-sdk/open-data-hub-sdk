@@ -1,12 +1,18 @@
 # OpenDataHub SDK feature factory
 
 from opendatahub_sdk.feature.base_feature import OpenDataHubBaseFeature
+from opendatahub_sdk.feature.ratelimit_feature import OpenDataHubRatelimitFeature
+from opendatahub_sdk.feature.retry_feature import OpenDataHubRetryFeature
 from opendatahub_sdk.feature.test_feature import OpenDataHubTestFeature
+from opendatahub_sdk.feature.timeout_feature import OpenDataHubTimeoutFeature
 
 
 _FEATURES = {
     "base": lambda: OpenDataHubBaseFeature(),
+    "ratelimit": lambda: OpenDataHubRatelimitFeature(),
+    "retry": lambda: OpenDataHubRetryFeature(),
     "test": lambda: OpenDataHubTestFeature(),
+    "timeout": lambda: OpenDataHubTimeoutFeature(),
 }
 
 

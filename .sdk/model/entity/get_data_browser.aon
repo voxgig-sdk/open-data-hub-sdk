@@ -36,6 +36,12 @@ main: kit: entity: get_data_browser: {
       name: "list"
       points: [
         {
+          contract: {
+            id: "GET /"
+            json: "{\"operationId\":\"getDataBrowser\",\"parameters\":[],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"data\":{\"description\":\"Array of data resources\",\"items\":{\"properties\":{\"attributes\":{\"description\":\"Resource attributes and metadata\",\"type\":\"object\"},\"id\":{\"description\":\"Unique identifier for the resource\",\"type\":\"string\"},\"type\":{\"description\":\"Type of resource (e.g., mobility, tourism)\",\"type\":\"string\"}},\"type\":\"object\"},\"type\":\"array\"}},\"type\":\"object\"}},\"text/html\":{\"schema\":{\"description\":\"HTML content of the data browser interface\",\"type\":\"string\"}}},\"description\":\"Successful response with data browser content\"},\"400\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"code\":{\"description\":\"Error code\",\"type\":\"integer\"},\"error\":{\"description\":\"Error message\",\"type\":\"string\"}},\"type\":\"object\"}}},\"description\":\"Bad Request - Invalid parameters\"},\"500\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"code\":{\"description\":\"Error code\",\"type\":\"integer\"},\"error\":{\"description\":\"Error message\",\"type\":\"string\"}},\"type\":\"object\"}}},\"description\":\"Internal Server Error\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/"
           transform: {
