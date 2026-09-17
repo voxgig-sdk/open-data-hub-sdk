@@ -127,9 +127,9 @@ class Config {
 
     entity: {
       
-      get_data_browser: {
-      },
-
+        get_data_browser: {
+        },
+  
     }
   }
 

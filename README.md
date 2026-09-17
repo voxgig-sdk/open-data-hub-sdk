@@ -105,12 +105,12 @@ local results, err = client:GetDataBrowser():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/open-data-hub-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
-| Python | `voxgig-sdk-open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
-| PHP | `voxgig-sdk/open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
+| TypeScript | `@voxgig-sdk/open-data-hub-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/tags) |
+| Python | `voxgig-sdk-open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/tags) |
+| PHP | `voxgig-sdk/open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/tags) |
 | Golang | `github.com/voxgig-sdk/open-data-hub-sdk/go` | `go get github.com/voxgig-sdk/open-data-hub-sdk/go@latest` |
-| Ruby | `voxgig-sdk-open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
-| Lua | `voxgig-sdk-open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/releases) |
+| Ruby | `voxgig-sdk-open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/tags) |
+| Lua | `voxgig-sdk-open-data-hub` | publish pending — [install from git tag](https://github.com/voxgig-sdk/open-data-hub-sdk/tags) |
 | Go CLI | `github.com/voxgig-sdk/open-data-hub-sdk/go-cli` | `go install github.com/voxgig-sdk/open-data-hub-sdk/go-cli/cmd/open-data-hub@latest` |
 | Go MCP server | `github.com/voxgig-sdk/open-data-hub-sdk/go-mcp` | `go get github.com/voxgig-sdk/open-data-hub-sdk/go-mcp@latest` |
 
