@@ -91,18 +91,21 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "attributes",
-						"short": "Resource attributes and metadata",
+						"title": "Attributes",
 						"type": "`$OBJECT`",
+						"short": "Resource attributes and metadata",
 					},
 					map[string]any{
 						"name": "id",
-						"short": "Unique identifier for the resource",
+						"title": "Id",
 						"type": "`$STRING`",
+						"short": "Unique identifier for the resource",
 					},
 					map[string]any{
 						"name": "type",
-						"short": "Type of resource (e.g., mobility, tourism)",
+						"title": "Type",
 						"type": "`$STRING`",
+						"short": "Type of resource (e.g., mobility, tourism)",
 					},
 				},
 				"id": map[string]any{
@@ -116,17 +119,18 @@ func MakeConfig() map[string]any {
 						"name": "list",
 						"points": []any{
 							map[string]any{
-								"args": map[string]any{},
 								"kind": "http",
 								"method": "GET",
 								"orig": "/",
 								"segments": []any{},
-								"select": map[string]any{},
+								"parts": []any{},
+								"rename": map[string]any{},
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.data`",
 								},
-								"parts": []any{},
+								"args": map[string]any{},
+								"select": map[string]any{},
 							},
 						},
 					},

@@ -19,7 +19,6 @@ import type {
   GetDataBrowserListMatch,
 } from '../OpenDataHubTypes'
 
-// TODO: needs Entity superclass
 class GetDataBrowserEntity extends OpenDataHubEntityBase<GetDataBrowser> {
 
   constructor(client: OpenDataHubSDK, entopts: any) {

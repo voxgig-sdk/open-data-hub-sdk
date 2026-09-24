@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GetDataBrowserEntity = void 0;
 const OpenDataHubEntityBase_1 = require("../OpenDataHubEntityBase");
-// TODO: needs Entity superclass
 class GetDataBrowserEntity extends OpenDataHubEntityBase_1.OpenDataHubEntityBase {
     constructor(client, entopts) {
         super(client, entopts);

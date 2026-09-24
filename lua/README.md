@@ -43,7 +43,7 @@ local getdatabrowsers, err = client:GetDataBrowser():list()
 if err then error(err) end
 
 for _, item in ipairs(getdatabrowsers) do
-  print(item["id"], item["type"])
+  print(item["id"])
 end
 ```
 

@@ -99,18 +99,21 @@ module OpenDataHubConfig
           "fields" => [
             {
               "name" => "attributes",
-              "short" => "Resource attributes and metadata",
+              "title" => "Attributes",
               "type" => "`$OBJECT`",
+              "short" => "Resource attributes and metadata",
             },
             {
               "name" => "id",
-              "short" => "Unique identifier for the resource",
+              "title" => "Id",
               "type" => "`$STRING`",
+              "short" => "Unique identifier for the resource",
             },
             {
               "name" => "type",
-              "short" => "Type of resource (e.g., mobility, tourism)",
+              "title" => "Type",
               "type" => "`$STRING`",
+              "short" => "Type of resource (e.g., mobility, tourism)",
             },
           ],
           "id" => {
@@ -124,17 +127,18 @@ module OpenDataHubConfig
               "name" => "list",
               "points" => [
                 {
-                  "args" => {},
                   "kind" => "http",
                   "method" => "GET",
                   "orig" => "/",
                   "segments" => [],
-                  "select" => {},
+                  "parts" => [],
+                  "rename" => {},
                   "transform" => {
                     "req" => "`reqdata`",
                     "res" => "`body.data`",
                   },
-                  "parts" => [],
+                  "args" => {},
+                  "select" => {},
                 },
               ],
             },
