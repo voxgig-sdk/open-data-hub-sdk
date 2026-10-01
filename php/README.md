@@ -12,9 +12,14 @@ The SDK exposes the API as capitalised, semantic **Entities** — for example `$
 
 ## Install
 This package is not yet published to Packagist. Install it from the
-GitHub release tag (`php/vX.Y.Z`):
+GitHub release tag (`php/vX.Y.Z`, see [Releases](https://github.com/voxgig-sdk/open-data-hub-sdk/releases)), or
+from a clone as a Composer path repository:
 
-- Releases: [https://github.com/voxgig-sdk/open-data-hub-sdk/releases](https://github.com/voxgig-sdk/open-data-hub-sdk/releases)
+```bash
+git clone https://github.com/voxgig-sdk/open-data-hub-sdk
+composer config repositories.open-data-hub-sdk path ./open-data-hub-sdk/php
+composer require voxgig-sdk/open-data-hub-sdk:@dev
+```
 
 
 ## Tutorial: your first API call

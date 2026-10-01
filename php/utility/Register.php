@@ -37,6 +37,8 @@ require_once __DIR__ . '/TransformResponse.php';
 
 OpenDataHubUtility::setRegistrar(function (OpenDataHubUtility $u): void {
     $u->clean = [OpenDataHubClean::class, 'call'];
+    $u->clean_add = [OpenDataHubClean::class, 'add'];
+    $u->clean_explain = [OpenDataHubDone::class, 'clean_explain'];
     $u->done = [OpenDataHubDone::class, 'call'];
     $u->make_error = [OpenDataHubMakeError::class, 'call'];
     $u->feature_add = [OpenDataHubFeatureAdd::class, 'call'];

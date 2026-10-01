@@ -33,6 +33,8 @@ require_relative 'transform_response'
 
 OpenDataHubUtility.registrar = ->(u) {
   u.clean = OpenDataHubUtilities::Clean
+  u.clean_add = OpenDataHubUtilities::CleanAdd
+  u.clean_explain = OpenDataHubUtilities::CleanExplain
   u.done = OpenDataHubUtilities::Done
   u.make_error = OpenDataHubUtilities::MakeError
   u.feature_add = OpenDataHubUtilities::FeatureAdd
