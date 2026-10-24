@@ -3,5 +3,15 @@
     "SUMMARY.md"
   ],
   "config": ".sdk/doc/qa/vale.ini",
-  "routes": {}
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "Open Data Hub Production Server",
+      "Resource attributes and metadata",
+      "Successful response with data browser content",
+      "The Open Data Hub API provides programmatic access to various datasets and resources. It allows users to retrieve, submit, and manage data related to domains such as mobility and tourism efficiently.",
+      "Type of resource (for example, mobility, tourism)",
+      "Unique identifier for the resource"
+    ]
+  }
 }

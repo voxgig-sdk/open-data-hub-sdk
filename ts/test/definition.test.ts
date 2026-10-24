@@ -17,15 +17,21 @@ const PLAN: any[] = [
     "args": [],
     "select": {},
     "headers": [],
+    "cookies": [],
+    "responseMedia": [
+      "text/html",
+      "application/json"
+    ],
     "query": [],
+    "queryArgs": [],
     "auth": null,
     "status": 200,
     "sample": {
       "data": [
         {
-          "attributes": {},
           "id": "x",
-          "type": "x"
+          "type": "x",
+          "attributes": {}
         }
       ]
     },

@@ -46,6 +46,16 @@ main: kit: entity: get_data_browser: {
           }
           m: "GET"
           o: "/"
+          rs: {
+            alternatives: [
+              {
+                kind: "raw"
+                media: "text/html"
+              }
+            ]
+            kind: "json"
+            media: "application/json"
+          }
           t: {
             req: "`reqdata`"
             res: "`body.data`"

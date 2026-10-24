@@ -93,6 +93,7 @@ class OpenDataHubConfig
           ],
           'optspec' => [
             'clearTimer' => '`$FUNCTION`',
+            'now' => '`$FUNCTION`',
             'setTimer' => '`$FUNCTION`',
           ],
           'strict' => false,
@@ -153,6 +154,16 @@ class OpenDataHubConfig
                   ],
                   'args' => [],
                   'select' => [],
+                  'response' => [
+                    'alternatives' => [
+                      [
+                        'kind' => 'raw',
+                        'media' => 'text/html',
+                      ],
+                    ],
+                    'kind' => 'json',
+                    'media' => 'application/json',
+                  ],
                 ],
               ],
             ],
